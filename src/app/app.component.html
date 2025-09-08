@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<style>
+<!-- <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -322,7 +322,7 @@
       </div>
     </div>
   </div>
-</main>
+</main> -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -332,5 +332,19 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<!-- 
+<router-outlet /> -->
 
-<router-outlet />
+<!--Interpolation binding-->
+<h1>Welcome to {{ title }}!</h1>
+<p>Name: {{ name }}</p>
+<p>Age: {{ age }}</p>
+<p>Student: {{ isStudent }}</p>
+<p>Skills: {{ skills.join(', ') }}</p>
+
+
+<!--Interpolation binding-->
+<p>Count: {{ count }}</p>
+
+<!--Event binding-->
+<button (click)="incrementCount()">Increment</button>
